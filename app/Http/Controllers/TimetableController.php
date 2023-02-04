@@ -15,6 +15,7 @@ class TimetableController extends Controller
      */
     public function index()
     {
+        //to get date and query from database to get available time
         $today = Carbon::today()->addDay(0);
         $today1 = Carbon::today()->addDay(1);
         $today2 = Carbon::today()->addDay(2);
@@ -32,6 +33,7 @@ class TimetableController extends Controller
         $entries5 = substr($today5, 0, 10);
         $entries6 = substr($today6, 0, 10);
 
+        //form available time into this format
         $arrayAvailableTimeDay = [ 0 => "O", 1 => "", 2 => "", 3 => "O", 4 => "O", 5 => "O", 
                                     6 => "O", 7 => "O", 8 => "O", 9 => "O", 10 => "O", 11 => "O", 
                                     12 => "O", 13 => "O", 14 => "O", 15 => "O", 16 => "O", 17 => "O", 
