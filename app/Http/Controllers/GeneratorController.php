@@ -44,7 +44,7 @@ class GeneratorController extends Controller
         // future enhancement
         // add handling if copy.bat is failed then throw error
         // check if company name is exist (duplicate company name validation)
-        $domain = "flexi.com.".$params0;
+        $domain = $params0.".flexi.com";
         $data="\n\n<VirtualHost ".$domain.">";
         $data1="DocumentRoot \"".$filePath."\public\"";
         $data2="ServerName ".$domain;
