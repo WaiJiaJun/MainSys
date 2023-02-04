@@ -1,0 +1,18 @@
+.img { 
+    width:100%;
+    height: auto;
+    top:0;
+    left:0;
+    position: relative; 
+    z-index: 1;
+} 
+
+.anybutton {
+    top:11%;
+    left:55%;
+    width:100px;
+    height:40px;
+    position: absolute;
+    z-index: 2;
+    background: orange; 
+}

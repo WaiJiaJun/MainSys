@@ -6,3 +6,8 @@ copy.bat
 
 
 ** Rmbr to put the location of copt.bat
+
+
+For timetables controller
+1. To install carbon as datetime formatter
+    -> composer require nesbot/carbon

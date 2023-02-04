@@ -37,3 +37,5 @@ Route::get('/stopApache', 'App\Http\Controllers\GeneratorController@stop')->name
 Route::get('/startApache', 'App\Http\Controllers\GeneratorController@start')->name('startApache');
 
 Route::resource('generators', 'App\Http\Controllers\GeneratorController');
+
+Route::resource('timetables', 'App\Http\Controllers\TimetableController');
